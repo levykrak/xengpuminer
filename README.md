@@ -4,8 +4,8 @@
 - [Step 0: Requirements](#step-0--requirements)
 - [Step 1: Setting up wallet:](#step-1-setting-up-wallet)
 - [Step 2: Setting up flightsheet](#step-2-setting-up-flightsheet)
-- [Step 3: Fill up the X1 Testnet Validator Application Form](#step-3-fill-up-the-x1-testnet-validator-application-form)
-- [Step 4: Configure X1 Validator](#step-4-configure-x1-validator)
+- [Step 3: Setting up hiveos system](#step-3-setting-up-hiveos-system)
+
 [The End](#the-end)
 <br><hr><br>
  
@@ -64,6 +64,8 @@ close the hive web shell and enjoy mining :)<br>
 
 
 <br>
+
+### The end
 Sometimes miner uptime time goes wild but, maybe someone will fix that. 
 
 levykrak alias aklimczyk
