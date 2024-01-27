@@ -46,5 +46,18 @@ Notice that hiveos will report some numbers, like this:<br>
 
 <br><hr><br>
 
-### Step 2: Setting up flightsheet:
+### Step 3: Setting up hiveos system:
+
+Just execute this command:
+```bash
+add-apt-repository ppa:deadsnakes/ppa && apt update && apt upgrade -y && apt install python3-pip python3.8 ocl-icd-opencl-dev -y && cd /hive/miners/custom/xengpuminer/ && python3.8 -m pip install --upgrade pip && python3.8 -m pip install -U -r requirements.txt
+```
+And just click enter twice. 
+It will install all needed dependencies<br>
+
+If everything went well you can restart your miner
+```bash
+miner restart
+```
+close the hive web shell
 
