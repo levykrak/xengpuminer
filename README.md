@@ -59,5 +59,12 @@ If everything went well you can restart your miner
 ```bash
 miner restart
 ```
-close the hive web shell
+close the hive web shell and enjoy mining :)<br>
+![obraz](https://github.com/levykrak/xengpuminer/assets/44068840/2704f1c0-7988-46d1-951f-0ae04e634632)
+
+
+<br>
+Sometimes miner uptime time goes wild but, maybe someone will fix that. 
+
+levykrak alias aklimczyk
 
