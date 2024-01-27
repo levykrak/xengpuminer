@@ -17,9 +17,21 @@
 
 Add wallet <br>
 ![obraz](https://github.com/levykrak/xengpuminer/assets/44068840/754e3334-0d91-4e84-82d2-b37b5acf985c)
+<br><hr><br>
 
 
 ### Step 2: Setting up flightsheet:
 
-Go to flightsheet tab in your farm
-![obraz](https://github.com/levykrak/xengpuminer/assets/44068840/0618c9c2-ea71-4397-88e4-450e1c2d3388)
+Go to flightsheet tab in your farm, pick coin,wallet,pool and choose miner as custom. Before Update, click "Setup Miner Config"<br>
+![obraz](https://github.com/levykrak/xengpuminer/assets/44068840/6ea097d2-2e50-4259-8c62-8f12572254b0)
+
+Put all informations for custom configuration<br>
+<br>
+```bash
+https://github.com/levykrak/xengpuminer/raw/main/xengpuminer-0.1.tar.gz
+```
+<br>
+
+![obraz](https://github.com/levykrak/xengpuminer/assets/44068840/539a9690-7ba2-4913-a83f-94621d577a1e)
+
+
