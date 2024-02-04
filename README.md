@@ -72,6 +72,7 @@ levykrak alias aklimczyk
 
 <br>
 Some OC tweaks for nvidia cards with difficulty 128000: <br>
+
 ![obraz](https://github.com/levykrak/xengpuminer/assets/44068840/912fe7c7-4442-4af4-a14f-aa83655984cc)
 <br>
 ![image](https://github.com/levykrak/xengpuminer/assets/44068840/c1345f3d-503a-42c0-8ee3-d632617b0b21)
