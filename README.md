@@ -70,3 +70,18 @@ Sometimes miner uptime time goes wild but, maybe someone will fix that.
 
 levykrak alias aklimczyk
 
+<br>
+Some OC tweaks for nvidia cards with difficulty 128000: <br>
+![obraz](https://github.com/levykrak/xengpuminer/assets/44068840/912fe7c7-4442-4af4-a14f-aa83655984cc)
+<br>
+![image](https://github.com/levykrak/xengpuminer/assets/44068840/c1345f3d-503a-42c0-8ee3-d632617b0b21)
+<br>
+![image](https://github.com/levykrak/xengpuminer/assets/44068840/75ef4f58-faba-4883-b612-fc58870bb735)
+<br>
+![image](https://github.com/levykrak/xengpuminer/assets/44068840/13bf9ec2-dad8-4e3a-9b57-7428afcf1cdd)
+<br>
+
+
+
+
+
