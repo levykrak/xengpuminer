@@ -1,3 +1,10 @@
+# Update 26.02.2024
+Due to the fact that xengpuminer is no longer developed I helped to create new way to mining xenblocks on hiveos. https://github.com/woodysoil/XenblocksMiner/blob/main/doc/HIVEOS.md
+
+<br><br><br>
+<hr><hr>
+
+
 # How to prepare HIVEOS to mine XENBlocks
 
 ## Table of contents
