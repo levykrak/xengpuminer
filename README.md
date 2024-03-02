@@ -41,7 +41,8 @@ https://github.com/levykrak/xengpuminer/releases/download/publish/xengpuminer-0.
 
 Archive contains builded XENGPUminer from https://github.com/shanhaicoder/XENGPUMiner  and necessary scripts for hiveos from here https://github.com/minershive/hiveos-linux/blob/master/hive/miners/custom/README.md. You can also adjust "Extra config arguments:" for you specification.
 <br>
-In this case "-g 12" means numbers of GPUs 
+In this case "-g 12" means numbers of GPUs <br>
+to use opencl for AMD cards, you need to add "-o" option as it described here https://github.com/shanhaicoder/XENGPUMiner
 <br>
 
 ![obraz](https://github.com/levykrak/xengpuminer/assets/44068840/68aed88a-b6a8-4d2b-ac6e-b8a9b112c785)
