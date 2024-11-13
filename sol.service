@@ -3,7 +3,6 @@ Description=Solana Validator
 After=network.target                                                                                                                                                                           
 StartLimitIntervalSec=0                                                                                                                                                                        
 
-
 [Service]                                                                                                                                                                                      
 Type=simple                                                                                                                                                                                    
 Restart=always                                                                                                                                                                                 
@@ -12,15 +11,14 @@ User=root
 LimitNOFILE=1000000                                                                                                                                                                            
 LogRateLimitIntervalSec=0
 #ExecStart=/root/.local/share/solana/install/active_release/bin/solana-validator
-ExecStart=/root/agave-xolana/target/release/agave-validator \                                                                                                                                  
-        --identity /root/.config/solana/identity.json \                                                                                                                                        
-        --limit-ledger-size 50000000 --rpc-port 8899 --entrypoint 103.219.170.19:8001 \                                                                                                        
-        --full-rpc-api --log - \                                                                                                                                                               
-        --vote-account  /root/.config/solana/vote.json \                                                                                                                                       
-        --max-genesis-archive-unpacked-size 1073741824 \                                                                                                                                       
-        --require-tower --enable-rpc-transaction-history --enable-extended-tx-metadata-storage \                                                                                               
-        --ledger /root/ledger --rpc-pubsub-enable-block-subscription                                                                                                                           
-
+ExecStart=/root/agave-xolana/target/release/agave-validator \
+        --identity /root/.config/solana/identity.json \
+        --limit-ledger-size 50000000 --rpc-port 8899 --entrypoint 103.219.170.19:8001 \
+        --full-rpc-api --log - \
+        --vote-account  /root/.config/solana/vote.json \
+        --max-genesis-archive-unpacked-size 1073741824 \
+        --require-tower --enable-rpc-transaction-history --enable-extended-tx-metadata-storage \
+        --ledger /root/ledger --rpc-pubsub-enable-block-subscription
 
 [Install]                                                                                                                                                                                      
 WantedBy=multi-user.target                                                                                                                                                                     
