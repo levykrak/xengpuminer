@@ -10,6 +10,7 @@ LimitNOFILE=1000000
 ExecStart=/root/agave-xolana/target/release/agave-validator \
     --identity /root/.config/solana/identity.json \
     --vote-account /root/.config/solana/vote.json \
+    --ledger /root/ledger \
     --entrypoint xolana.xen.network:8001 \
     --full-rpc-api \
     --log - \
