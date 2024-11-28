@@ -1,27 +1,33 @@
 [Unit]
-Description=Agave Xolana Validator
+Description=Xolana Validator
 After=network.target
 
 [Service]
 Type=simple
 User=root
 LimitNOFILE=1000000
-#WorkingDirectory=/root/agave-xolana
-ExecStart=/root/agave-xolana/target/release/agave-validator \
+#WorkingDirectory=/root/solanalabs
+ExecStart=/root/solanalabs/target/release/agave-validator \
     --identity /root/.config/solana/identity.json \
-    --vote-account /root/.config/solana/vote.json \
+    --vote-account /root/.config/solana/vote.json \ 
+    --known-validator C58LhVv822GiE3s84pwb58yiaezWLaFFdUtTWDGFySsU \
+    --only-known-rpc \
+    --log /home/ubuntu/validator.log \
     --ledger /root/ledger \
+    --rpc-port 8899 \
+    --dynamic-port-range 8000-8020 \
     --entrypoint xolana.xen.network:8001 \
-    --full-rpc-api \
-    --log - \
-    --limit-ledger-size 50000000 --rpc-port 8899 \
-    --max-genesis-archive-unpacked-size 1073741824 \
-    --require-tower \
+    --wal-recovery-mode skip_any_corrupted_record \
+    --limit-ledger-size 50000000 \
     --enable-rpc-transaction-history \
     --enable-extended-tx-metadata-storage \
-    --rpc-pubsub-enable-block-subscription
+    --rpc-pubsub-enable-block-subscription \
+    --full-snapshot-interval-slots 5000 \
+    --maximum-incremental-snapshots-to-retain 10 \
+    --maximum-full-snapshots-to-retain 50
+
 Restart=always
-RestartSec=10s
+RestartSec=20s
 
 [Install]
 WantedBy=multi-user.target
