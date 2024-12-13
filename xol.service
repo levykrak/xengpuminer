@@ -11,12 +11,16 @@ ExecStart=/root/solanalabs/target/release/solana-validator \
     --identity /root/.config/solana/identity.json \
     --vote-account /root/.config/solana/vote.json \
     --known-validator C58LhVv822GiE3s84pwb58yiaezWLaFFdUtTWDGFySsU \
+    --known-validator Abt4r6uhFs7yPwR3jT5qbnLjBtasgHkRVAd1W6H5yonT \
+    --known-validator 5NfpgFCwrYzcgJkda9bRJvccycLUo3dvVQsVAK2W43Um \
     --only-known-rpc \
     --log /home/ubuntu/validator.log \
     --ledger /root/ledger \
     --rpc-port 8899 \
+    --full-rpc-api \
     --dynamic-port-range 8000-8020 \
     --entrypoint xolana.xen.network:8001 \
+    --entrypoint owlnet.dev:8000 \
     --wal-recovery-mode skip_any_corrupted_record \
     --limit-ledger-size 50000000 \
     --enable-rpc-transaction-history \
