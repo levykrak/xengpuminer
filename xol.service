@@ -14,7 +14,7 @@ ExecStart=/root/solanalabs/target/release/solana-validator \
     --known-validator Abt4r6uhFs7yPwR3jT5qbnLjBtasgHkRVAd1W6H5yonT \
     --known-validator 5NfpgFCwrYzcgJkda9bRJvccycLUo3dvVQsVAK2W43Um \
     --only-known-rpc \
-    --log /home/ubuntu/validator.log \
+    --log - \
     --ledger /root/ledger \
     --rpc-port 8899 \
     --full-rpc-api \
