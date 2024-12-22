@@ -17,7 +17,7 @@ ExecStart=/root/solanalabs/target/release/solana-validator \
     --rpc-port 8899 \
     --full-rpc-api \
     --dynamic-port-range 8000-8020 \
-    --entrypoint 206.72.198.218:8001 \    
+    --entrypoint 206.72.198.218:8001 \
     --wal-recovery-mode skip_any_corrupted_record \
     --limit-ledger-size 50000000 \
     --enable-rpc-transaction-history \
