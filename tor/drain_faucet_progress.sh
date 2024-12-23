@@ -22,16 +22,19 @@ while IFS= read -r address; do
         echo "[$current_index/$total_addresses] (${progress}%) Przetwarzanie adresu: $address"
 
         # Wykonanie żądania cURL
-        response=$(curl --proxy socks5h://localhost:9050 -X POST https://xolana.xen.network/faucet \
+        #response=$(curl --proxy socks5h://localhost:9050 -X POST https://xolana.xen.network/faucet \
+        response=$(curl -X POST https://xolana.xen.network/faucet \
             -H "Content-Type: application/json" \
             -d "{\"pubkey\":\"$address\"}" \
-            -s)
+            -s \
+            --header "X-Forwarded-for: $((RANDOM % 256)).$((RANDOM % 256)).$((RANDOM % 256)).$((RANDOM % 256))")
+
         
         echo "Odpowiedź: $response"
 
         # Restart usługi Tor
-        echo "Restartowanie usługi Tor..."
-        sudo systemctl reload tor
+        #echo "Restartowanie usługi Tor..."
+        #sudo systemctl reload tor
 
         # Opcjonalnie dodaj opóźnienie (np. 2 sekundy)
         #sleep 1
