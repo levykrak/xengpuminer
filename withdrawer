@@ -2,7 +2,7 @@
 
 # Zdefiniuj zmienne z ścieżkami dostępu
 CONFIG_DIR="/root/.config/solana"
-SOLANA_BIN="/home/user/.local/share/solana/install/releases/1.18.15/solana-release/bin/solana"  # Zmień na odpowiednią ścieżkę do pliku wykonywalnego solana
+SOLANA_BIN="/root/.local/share/solana/install/releases/1.18.15/solana-release/bin/solana"  # Zmień na odpowiednią ścieżkę do pliku wykonywalnego solana
 
 # Wykonaj polecenia z użyciem zmiennych
 $SOLANA_BIN withdraw-from-vote-account $CONFIG_DIR/vote.json $CONFIG_DIR/id.json ALL --fee-payer $CONFIG_DIR/identity.json -k $CONFIG_DIR/id.json
