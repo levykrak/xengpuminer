@@ -1,7 +1,13 @@
 #!/bin/bash
-solana withdraw-from-vote-account vote.json id.json ALL --fee-payer /root/.config/solana/identity.json -k /root/.config/solana/id.json
-solana deactivate-stake stake2.json -k /root/.config/solana/id.json
+
+# Zdefiniuj zmienne z ścieżkami dostępu
+CONFIG_DIR="/root/.config/solana"
+SOLANA_BIN="/home/user/.local/share/solana/install/releases/1.18.15/solana-release/bin/solana"  # Zmień na odpowiednią ścieżkę do pliku wykonywalnego solana
+
+# Wykonaj polecenia z użyciem zmiennych
+$SOLANA_BIN withdraw-from-vote-account $CONFIG_DIR/vote.json $CONFIG_DIR/id.json ALL --fee-payer $CONFIG_DIR/identity.json -k $CONFIG_DIR/id.json
+$SOLANA_BIN deactivate-stake $CONFIG_DIR/stake2.json -k $CONFIG_DIR/id.json
 sleep 200
-solana withdraw-stake stake2.json id.json ALL -k /root/.config/solana/id.json
-solana create-stake-account stake2.json ALL -k /root/.config/solana/id.json
-solana delegate-stake stake2.json GTqL1GqXsCEMyzJpqKVkbGrjk5sxqcS2vRM9nAFuyFCz --fee-payer identity.json -k /root/.config/solana/id.json
+$SOLANA_BIN withdraw-stake $CONFIG_DIR/stake2.json $CONFIG_DIR/id.json ALL -k $CONFIG_DIR/id.json
+$SOLANA_BIN create-stake-account $CONFIG_DIR/stake2.json ALL -k $CONFIG_DIR/id.json
+$SOLANA_BIN delegate-stake $CONFIG_DIR/stake2.json GTqL1GqXsCEMyzJpqKVkbGrjk5sxqcS2vRM9nAFuyFCz --fee-payer $CONFIG_DIR/identity.json -k $CONFIG_DIR/id.json
