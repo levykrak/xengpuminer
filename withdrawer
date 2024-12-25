@@ -1,7 +1,7 @@
 #!/bin/bash
-solana withdraw-from-vote-account vote.json id.json ALL --fee-payer identity.json
-solana deactivate-stake stake2.json
+solana withdraw-from-vote-account vote.json id.json ALL --fee-payer /root/.config/solana/identity.json -k /root/.config/solana/id.json
+solana deactivate-stake stake2.json -k /root/.config/solana/id.json
 sleep 200
-solana withdraw-stake stake2.json id.json ALL --fee-payer id.json
-solana create-stake-account stake2.json ALL -k id.json
-solana delegate-stake stake2.json GTqL1GqXsCEMyzJpqKVkbGrjk5sxqcS2vRM9nAFuyFCz --fee-payer identity.json
+solana withdraw-stake stake2.json id.json ALL -k /root/.config/solana/id.json
+solana create-stake-account stake2.json ALL -k /root/.config/solana/id.json
+solana delegate-stake stake2.json GTqL1GqXsCEMyzJpqKVkbGrjk5sxqcS2vRM9nAFuyFCz --fee-payer identity.json -k /root/.config/solana/id.json
