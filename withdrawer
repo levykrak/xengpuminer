@@ -10,4 +10,4 @@ $SOLANA_BIN deactivate-stake $CONFIG_DIR/stake2.json -k $CONFIG_DIR/id.json
 sleep 200
 $SOLANA_BIN withdraw-stake $CONFIG_DIR/stake2.json $CONFIG_DIR/id.json ALL -k $CONFIG_DIR/id.json
 $SOLANA_BIN create-stake-account $CONFIG_DIR/stake2.json ALL -k $CONFIG_DIR/id.json
-$SOLANA_BIN delegate-stake $CONFIG_DIR/stake2.json GTqL1GqXsCEMyzJpqKVkbGrjk5sxqcS2vRM9nAFuyFCz --fee-payer $CONFIG_DIR/identity.json -k $CONFIG_DIR/id.json
+$SOLANA_BIN delegate-stake $CONFIG_DIR/stake2.json $CONFIG_DIR/vote.json --fee-payer $CONFIG_DIR/identity.json -k $CONFIG_DIR/id.json
