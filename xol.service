@@ -32,9 +32,9 @@ ExecStart=/root/tachyon/target/release/tachyon-validator \
     --full-snapshot-interval-slots 5000 \
     --maximum-incremental-snapshots-to-retain 10 \
     --maximum-full-snapshots-to-retain 50 \
-    --wait-for-supermajority $SLOT_X \
-    --expected-shred-version $SHRED_VERSION \
-    --expected-bank-hash
+    --wait-for-supermajority 48853558 \
+    --expected-shred-version BNd9PkMbZmEHGeErE6amj9Fb3phG5BsPH4FFbQfa2dVx \
+    --expected-bank-hash 41710
 
 Restart=always
 RestartSec=20s
