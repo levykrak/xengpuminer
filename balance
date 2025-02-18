@@ -1,2 +1,11 @@
 #!/bin/bash
-for file in *.json; do   echo "Checking balance for $file:";   ~/tachyon/target/release/solana balance --keypair "$file"; done
+# Ustawienie szerokości kolumny dla nazw plików
+width=20  
+
+for file in *.json; do
+    # Pobranie salda dla danego pliku
+    balance=$(~/tachyon/target/release/solana balance --keypair "$file")
+    
+    # Formatowanie i wyświetlanie wyniku
+    printf "%-${width}s %s\n" "$file:" "[SOL] $balance"
+done
