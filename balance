@@ -1,0 +1,2 @@
+#!/bin/bash
+for file in *.json; do   echo "Checking balance for $file:";   solana balance --keypair "$file"; done
