@@ -35,7 +35,7 @@ ExecStart=/root/tachyon/target/release/tachyon-validator \
 
 
 Restart=always
-RestartSec=1s
+RestartSec=5s
 
 [Install]
 WantedBy=multi-user.target
