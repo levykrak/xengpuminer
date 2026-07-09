@@ -10,11 +10,12 @@ LimitNOFILE=1000000
 ExecStart=/root/tachyon/target/release/tachyon-validator \
     --identity /root/.config/solana/identity.json \
     --vote-account /root/.config/solana/vote.json \
-    --known-validator 7ufaUVtQKzGu5tpFtii9Cg8kR4jcpjQSXwsF3oVPSMZA \
-    --known-validator 5Rzytnub9yGTFHqSmauFLsAbdXFbehMwPBLiuEgKajUN \
-    --known-validator 4V2QkkWce8bwTzvvwPiNRNQ4W433ZsGQi9aWU12Q8uBF \
-    --known-validator CkMwg4TM6jaSC5rJALQjvLc51XFY5pJ1H9f1Tmu5Qdxs \
-    --known-validator 7J5wJaH55ZYjCCmCMt7Gb3QL6FGFmjz5U8b6NcbzfoTy \
+    --known-validator 2skZy1HiefFby6a8raendfWGKGRmpcDiwvuPj1v7atch \
+    --known-validator 9zkHekQ7TS1JddcGMgMsZYDUc3xvGzUnXCAfKERvuwUR \
+    --known-validator ErccS37ii8NbPjsDdGso93vGj7rkF8WhuCV7GhoWmqsS \
+    --known-validator 8MUdMKKnod3zD1errE1jjeswLtuZ7jNiTvN2EC5cqbCG \
+    --known-validator 3ka4FFFTm3YgTJ17598ApHuzxELd7PcHnHQsY8uqbDsu \
+    --known-validator wwcXJz47MTnZacxJ4WSxbhtKuiZvHVqDrBbNCCpjVp1 \
     --only-known-rpc \
     --log - \
     --ledger /root/ledger \
